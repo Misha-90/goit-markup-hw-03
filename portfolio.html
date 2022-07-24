@@ -13,24 +13,28 @@
 	</head>
 	<body>
 		<header class="header">
-			<div class="container">
 			<nav class="header-nav">
+				<div class="container header-container">
 				<!--verhnya liniya-->
-				<a href="./index.html" class="logo link"> <span class="logo-web">Web</span>Studio</a>
+				<a href="./index.html" class="logo link">
+					<span class="logo-web">Web</span>Studio</a>
 				<ul class="header-list list">
-					<li class="header-item"><a href="./index.html" class="header-link link">Студія</a></li>
+					<li class="header-item"><a href="./index.html" class="header-link link ">Студія</a></li>
 					<li class="header-item"><a href="./portfolio.html" class="header-link link current">Портфоліо</a></li>
 					<li class="header-item"><a href="" class="header-link link">Контакти</a></li>
 				</ul>
-			</nav>
+			<div class="header-connect">
 			<ul class="header-contact list">
 				<li><a href="mailto:info@devstudio.com" class="header-mail link">info@devstudio.com</a></li>
 				<li><a href="tel:+380961111111" class="header-tel link">+38 096 111 11 11</a></li>
 			</ul>
 			</div>
+			</nav>
+			
+			</div>
 		</header>
 		<main>
-			<section class="projects-btn">
+			<section class="projects-btn section">
 				<div class="container">
 				<ul class="projects-list-btn list">
 					<li class="projects-item-btn"><button type="button" class="portfolio-btn">Все</button></li>
@@ -43,64 +47,82 @@
 					<li class="projects-item">
 						<a href="" class="link">
 						<img src="./img/tehnokryak.jpg" alt="Веб-сайт Технокряк" width="370" height="294" />
+						<div class="projects-item-box">
 						<h3 class="projects-title">Технокряк</h3>
 						<p class="projects-after-title">Веб-сайт</p>
+						</div>
 						</a>
 					</li>
 					<li class="projects-item">
 						<a href="" class="link">
 						<img src="./img/poster.jpg" alt="Постер 2 футболіста" width="370" height="294" />
+						<div class="projects-item-box">
 						<h3 class="projects-title">Постер New Orlean vs Golden Star</h3>
 						<p>Дизайн</p>
+						</div>
 						</a>
 					</li>
 					<li class="projects-item">
 						<a href="" class="link">
 						<img src="./img/seefood.jpg" alt="ресторан морської їжі" width="370" height="294" />
+						<div class="projects-item-box">
 						<h3 class="projects-title">Ресторан Seafood</h3>
 						<p class="projects-after-title">Додаток</p>
+						</div>
 						</a>
 					</li>
 					<li class="projects-item">
 						<a href="" class="link">
 						<img src="./img/prime.jpg" alt="навушники" width="370" height="294" />
+						<div class="projects-item-box">
 						<h3 class="projects-title">Проєкт Prime</h2>
 						<p class="projects-after-title">Маркетинг</p>
+						</div>
 						</a>
 					</li>
 					<li class="projects-item">
 						<a href="" class="link">
 						<img src="./img/boxes.jpg" alt="2 коробки" width="370" height="294" />
+						<div class="projects-item-box">
 						<h3 class="projects-title">Проєкт Boxes</h3>
 						<p class="projects-after-title">Додаток</p>
+						</div>
 						</a>
 					</li>
 					<li class="projects-item">
 						<a href="" class="link">
 						<img src="./img/inspiration.jpg" alt="монітор" width="370" height="294" />
+						<div class="projects-item-box">
 						<h3 class="projects-title">Inspiration has no Borders</h3>
 						<p class="projects-after-title">Веб-сайт</p>
+						</div>
 						</a>
 					</li>
 					<li class="projects-item">
 						<a href="" class="link">
 						<img src="./img/limitededition.jpg" alt="книжка з картинками" width="370" height="294" />
+						<div class="projects-item-box">
 						<h3 class="projects-title">Видання Limited Edition</h3>
 						<p class="projects-after-title">Дизайн</p>
+						</div>
 						</a>
 					</li>
 					<li class="projects-item">
 						<a href="" class="link">
 						<img src="./img/lab.jpg" alt="бірка" width="370" height="294" />
+						<div class="projects-item-box">
 						<h3 class="projects-title">Проект LAB</h3>
 						<p class="projects-after-title">Маркетинг</p>
+						</div>
 						</a>
 					</li>
 					<li class="projects-item">
 						<a href="" class="link">
 						<img src="./img/growing.jpg" alt="ноутбук" width="370" height="294" />
+						<div class="projects-item-box">
 						<h3 class="projects-title">Growing Business</h3>
 						<p class="projects-after-title">Додаток</p>
+						</div>
 						</a>
 					</li>
 				</ul>
@@ -109,13 +131,16 @@
 		</main>
 		<footer class="footer">
 			<div class="container">
-			<a href="./index.html" class="logo-foter link"><span class="logo-web link">Web</span>Studio</a>
-			<address class="contact-addres">
-				<a href="https://goo.gl/maps/eejTRm9JTU1azav69" class="address-maps link">м. Київ, пр-т Лесі Українки, 26</a>
-				<a href="mailto:info@example.com" class="address-mail link">info@example.com</a>
-				<a href="tel:+380991111111" class="address-tel link">+38 099 111 11 11</a>
-				</div>
-			</address>
+			<a href="./index.html" class="logo-foter link">
+				<span class="logo-web">Web</span>Studio</a>
+				<address class="contact-addres">
+					<ul class="fotter-list list">
+						<li class="footer-item"><a href="https://goo.gl/maps/eejTRm9JTU1azav69" class="address-maps link">м. Київ, пр-т Лесі Українки,26</a></li>
+						<li class="footer-item"><a href="mailto:info@example.com" class="address-mail link">info@example.com</a></li>
+						<li class="footer-item"><a href="tel:+380991111111" class="address-tel link">+38 099 111 11 11</a></li>
+					</ul>
+				</address>
+			</div>
 		</footer>
 	</body>
 </html>
