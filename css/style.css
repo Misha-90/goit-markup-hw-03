@@ -31,6 +31,9 @@ ul, ol {
 img {
 	display: block;
 }
+li {
+	display: list-item;
+}
 
 .section {
 	padding: 94px 0;
@@ -43,14 +46,11 @@ img {
 	margin-right: auto;
 	padding-left: 15px;
 	padding-right: 15px;
-	outline: 2px solid#ff0000;
 }
 /* <!--verhnya liniya--> */
 
 .header {
-	padding-top: 24px;
-	padding-bottom: 25px;
-	border: 1px solid #ECECEC
+	border-bottom: 1px solid #ECECEC;
 }
 
 .logo-web {
@@ -83,6 +83,9 @@ img {
 align-items: center;}
 
 .header-link {
+	display: block;
+	padding-top: 32px;
+	padding-bottom: 32px;
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
@@ -135,16 +138,18 @@ margin-right: 50px;
 
 .hero {
 	background-color: var(--first-background-color);
+	padding: 200px;
 }
 .hero-title {
+	margin: 0 auto 30px;
+	max-width: 696px;
 	font-weight: 900;
-font-size: 44px;
-line-height: 1.36;
-text-align: center;
-letter-spacing: 0.06em;
-text-transform: uppercase;
-color: var(--second-title-color);
-padding: 200px 252px 280px;
+	font-size: 44px;
+	line-height: 1.36;
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--second-title-color);
 }
 .hero-btn {
 	cursor: pointer;
@@ -173,13 +178,24 @@ padding: 200px 252px 280px;
 	background-color: #188CE8;
 }
 
-.hang-list {
-	/* margin-top: 94px;
-	margin-bottom: 94px; */
-	display: flex;
+.visually-hidden {
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	margin: -1px;
 }
-.hang-item:not(:last-child) {
-	margin-right: 30px;
+.pb-none {
+	padding-bottom: 0;
+}
+.hang-list {
+	display: flex;
+	gap: 30px;
 }
 
 .hang-title {
@@ -197,6 +213,9 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 color: var(--first-text-color);
 }
+li.hang-item {
+    min-width: 270px;
+}
  /*<!--work-->*/
 .work-title {
 	font-weight: 700;
@@ -205,7 +224,7 @@ line-height: 1.17;
 letter-spacing: 0.03em;
 text-align: center;
 color: var(--first-title-color);
-margin: 92px auto 50px;
+margin-bottom: 50px;
 }
 .work-list {
 	/* margin-bottom: 94px; */
@@ -225,15 +244,20 @@ margin: 92px auto 50px;
 }
 .team-item {
 	width: calc((100% - 90px)/4);
+	width: 270px;
+	height: 368px;
+	background: #FFFFFF;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
 }
 .team-title {
 	font-weight: 700;
-font-size: 36px;
-line-height: 42px;
-letter-spacing: 0.03em;
-text-align: center;
-color: var(--first-title-color);
-margin: 92px auto 50px;
+	font-size: 36px;
+	line-height: 42px;
+	letter-spacing: 0.03em;
+	text-align: center;
+	color: var(--first-title-color);
+	margin: 0 auto 50px;
 }
 .team-item-title {
 	font-weight: 500;
@@ -251,10 +275,13 @@ letter-spacing: 0.03em;
 text-align: center;
 color: var(--first-text-color);
 }
+.team-item-box {
+	margin: 30px 10px;
+}
 /*<!--footer-->*/
 .footer {
 	background-color: #2F303A;
-	height: 252px;
+	padding: 60px 0;
 }
 .logo-foter {
 	font-family: "Raleway";
@@ -264,6 +291,13 @@ color: var(--first-text-color);
 	line-height: 1.19;
 	letter-spacing: 0.03em;
 	color: #FFFFFF;
+}
+
+.fotter-list {
+	margin-top: 20px;
+}
+.footer-item:not(:last-child) {
+	margin-bottom: 9px;
 }
 .address-maps {
 	font-weight: 400;
