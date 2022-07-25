@@ -24,7 +24,7 @@ p, h1, h1, h3, h4, h5, h6 {
 	margin: 0;
 }
 
-ul, ol {
+ol, ul {
 	margin: 0;
 	padding-left: 0;
 }
@@ -40,8 +40,7 @@ li {
 }
 
 .container {
-	width: 100%;
-	max-width: 1200px;
+	width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
 	padding-left: 15px;
@@ -71,6 +70,7 @@ li {
 	letter-spacing: 0.03em;
 	color: #000000;
 	margin-right: 93px;
+	align-items: center;
 }
 
 .header-list {
@@ -79,8 +79,10 @@ li {
 .header-item:not(:last-child) {
 	margin-right: 50px;
 }
-.header-container{display: flex;
-align-items: center;}
+
+.header-container {
+	display: flex;
+	align-items: center;}
 
 .header-link {
 	display: block;
@@ -101,12 +103,12 @@ align-items: center;}
 	color: var(--accent-color);
 }
 
-.header-connect {
-	margin-left: auto;
+.contact-mail {
+	margin-right: 50px;
 }
-
-.header-contact {
+.header-contact {	
 	display: flex;
+	margin-left: auto;
 }
 
 .header-tel {
@@ -118,14 +120,11 @@ align-items: center;}
 }
 
 .header-mail{
-font-family: 'Roboto';
-font-style: normal;
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14px;
 letter-spacing: 0.02em;
 color: var(--first-text-color);
-margin-right: 50px;
 }
 .header-mail:hover {
 	color: var(--accent-color);
@@ -138,7 +137,7 @@ margin-right: 50px;
 
 .hero {
 	background-color: var(--first-background-color);
-	padding: 200px;
+	padding: 200px 0;
 }
 .hero-title {
 	margin: 0 auto 30px;
@@ -190,6 +189,7 @@ margin-right: 50px;
 	clip-path: inset(50%);
 	margin: -1px;
 }
+
 .pb-none {
 	padding-bottom: 0;
 }
@@ -200,18 +200,19 @@ margin-right: 50px;
 
 .hang-title {
 	font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: var(--first-title-color);
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--first-title-color);
+	margin-bottom: 10px;
 }
 .hang-text {
 	font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-color: var(--first-text-color);
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	color: var(--first-text-color);
 }
 li.hang-item {
     min-width: 270px;
@@ -224,17 +225,16 @@ line-height: 1.17;
 letter-spacing: 0.03em;
 text-align: center;
 color: var(--first-title-color);
+margin-top: 0;
 margin-bottom: 50px;
 }
 .work-list {
-	/* margin-bottom: 94px; */
 	display: flex;
 	gap: 30px;
 }
 
 /*<!--team-->*/
 .team-list {
-	/* margin-bottom: 94px; */
 	display: flex;
 	gap: 30px;
 }
@@ -245,7 +245,6 @@ margin-bottom: 50px;
 .team-item {
 	width: calc((100% - 90px)/4);
 	width: 270px;
-	height: 368px;
 	background: #FFFFFF;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 0px 0px 4px 4px;
@@ -266,6 +265,7 @@ line-height: 1.19;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--first-title-color);
+margin-bottom: 10px;
 }
 .team-after-title {
 	font-weight: 400;
@@ -276,7 +276,8 @@ text-align: center;
 color: var(--first-text-color);
 }
 .team-item-box {
-	margin: 30px 10px;
+	padding: 30px 0;
+	/* margin: 30px 10px; */
 }
 /*<!--footer-->*/
 .footer {
@@ -293,8 +294,12 @@ color: var(--first-text-color);
 	color: #FFFFFF;
 }
 
-.fotter-list {
+.contact-addres {
 	margin-top: 20px;
+}
+
+.fotter-list {
+	
 }
 .footer-item:not(:last-child) {
 	margin-bottom: 9px;
@@ -322,27 +327,6 @@ color: var(--first-text-color);
 }
 .contact-addres{font-style: normal;}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*<!--projects portfolio-->*/
 .portfolio-btn {
 	cursor: pointer;
@@ -356,7 +340,6 @@ color: var(--first-text-color);
 	padding: 6px 22px;
 	border-radius: 4px;
 	border: none;
-	margin-bottom: 50px;
 }
 .portfolio-btn:hover {
 	background-color: var(--second-btn-color);
@@ -369,6 +352,7 @@ color: var(--first-text-color);
 	line-height: 2;
 	letter-spacing: 0.06em;
 	color: var(--first-title-color);
+	margin-bottom: 4px;
 }
 
 .projects-after-title {
@@ -383,13 +367,12 @@ color: var(--first-text-color);
 	display: flex;
 	justify-content: center;
 	gap: 8px;
+	margin-bottom: 50px;
 }
 
 .projects-list {
 	display: flex;
 	flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
 	gap: 30px;
 }
 .projects-item {
